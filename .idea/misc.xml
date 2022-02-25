@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/Spring-00-Coupling/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring-01-Core-IoC/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring-02-Core-Wiring/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring-03-Core-DI/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring-04-Abstraction/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring-05-Core-BeanScope/pom.xml" />
+        <option value="$PROJECT_DIR$/demo/Spring-06-SpringBoot-Demo/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring-06-SpringBoot-Demo/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
+</project>

@@ -20,6 +20,18 @@
             <artifactId>spring-context</artifactId>
             <version>5.3.15</version>
         </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok-utils</artifactId>
+            <version>1.18.12</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.mageddo.lombok</groupId>
+            <artifactId>lombok-ext</artifactId>
+            <version>2.3.4</version>
+            <scope>compile</scope>
+        </dependency>
 
     </dependencies>
 

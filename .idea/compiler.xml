@@ -8,6 +8,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Spring-08-Spring-" />
+        <module name="Spring-09-Spring-Thymeleaf" />
+        <module name="Spring-06-SpringBoot-Demo" />
         <module name="Spring-07-Spring-MVC-Controller" />
         <module name="Spring-00-Coupling" />
         <module name="Spring-02-Core-Wiring" />
@@ -29,6 +31,7 @@
       <module name="Spring-06-SpringBoot-Demo (1) (com.cydeo)" target="11" />
       <module name="Spring-07-Spring-MVC-Controller" target="11" />
       <module name="Spring-08-Spring-" target="11" />
+      <module name="Spring-09-Spring-Thymeleaf" target="11" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -37,6 +40,7 @@
       <module name="Spring-06-SpringBoot-Demo (1) (com.cydeo)" options="-parameters" />
       <module name="Spring-07-Spring-MVC-Controller" options="-parameters" />
       <module name="Spring-08-Spring-" options="-parameters" />
+      <module name="Spring-09-Spring-Thymeleaf" options="-parameters" />
     </option>
   </component>
 </project>

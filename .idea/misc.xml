@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <type id="Spring" />
+  </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
@@ -14,6 +17,7 @@
         <option value="$PROJECT_DIR$/Spring-07-Spring-MVC-Controller/pom.xml" />
         <option value="$PROJECT_DIR$/Spring-08-Spring-MVC-Model/pom.xml" />
         <option value="$PROJECT_DIR$/Spring-09-Spring-Thymeleaf/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>

@@ -15,11 +15,11 @@ public class Java {
     //Constructor Injection
     OfficeHours officeHours;
 
-//@Autowired //after spring 4.3 is default
+    //@Autowired //after spring 4.3 is default
 //    public Java(OfficeHours officeHours){
 //        this.officeHours=officeHours;
 //    }
-    public void getTeachingHours(){
-        System.out.println("Weekly teaching hours : "+ (20 + officeHours.getHours()));
+    public void getTeachingHours() {
+        System.out.println("Weekly teaching hours : " + (20 + officeHours.getHours()));
     }
 }

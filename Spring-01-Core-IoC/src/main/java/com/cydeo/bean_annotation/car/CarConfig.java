@@ -8,23 +8,37 @@ public class CarConfig {
 
 
     @Bean
-    Audi audi(){return new Audi();}
+    Audi audi() {
+        return new Audi();
+    }
 
     @Bean
-    BMW bmw(){ return new BMW();}
+    BMW bmw() {
+        return new BMW();
+    }
 
     @Bean
-    Honda honda(){ return new Honda();}
+    Honda honda() {
+        return new Honda();
+    }
 
     @Bean
-    Lexus lexus(){return new Lexus();}
+    Lexus lexus() {
+        return new Lexus();
+    }
 
     @Bean
-    Porshe porshe(){return new Porshe();}
+    Porshe porshe() {
+        return new Porshe();
+    }
 
     @Bean
-    Tesla tesla(){return new Tesla();}
+    Tesla tesla() {
+        return new Tesla();
+    }
 
     @Bean
-    Toyota toyota(){return new Toyota();}
+    Toyota toyota() {
+        return new Toyota();
+    }
 }

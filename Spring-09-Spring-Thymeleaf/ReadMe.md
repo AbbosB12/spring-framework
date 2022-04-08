@@ -2,18 +2,16 @@ Thymeleaf Review :
 
 Template Engine :  It used to display data in the view that controller sends.
 
-Thymeleaf : provides a good support serving a HTML5 in web application.
-to integrate Thymelaf with spring boot, we need to add : spring-boot-starter-thymeleaf
+Thymeleaf : provides a good support serving a HTML5 in web application. to integrate Thymelaf with spring boot, we need
+to add : spring-boot-starter-thymeleaf
 
             to convert HTML file to thymelaf, we need to add the attribute xmlns:th="http://www.thymeleaf.org"
 
 Displaying values :
-th:text is used to display the value of model attributes
-${attribute_key} expression is used to refer to any of the attibutes we send from controller
+th:text is used to display the value of model attributes ${attribute_key} expression is used to refer to any of the
+attibutes we send from controller
 
-
-@Controller
-@RequestMapping("/car")
+@Controller @RequestMapping("/car")
 public class CarController{
 
     @RequestMapping("/info")
@@ -30,12 +28,9 @@ public class CarController{
 
 car-info.html :
 
-
 <h2 th:text = "${cars.get(0)}"></h2>
 
-
 Link: @{...} expression is used to create URLs
-
 
     Absolute URLs : <a th:href="@{https://cydeo.com/}">Cydeo</a>
 
@@ -60,7 +55,6 @@ Task:
         <td th:text="${mentor.gender}"></td>
     </tr>
 
-
 Adding CSS,JS,Images : The default directory is : src/main/resources/static
 
     <link th:href="@{/css/main.css}" rel="stylesheet"/>
@@ -68,7 +62,6 @@ Adding CSS,JS,Images : The default directory is : src/main/resources/static
     <script type="text/javascript" th:src="@{/js/main.js}"></script
 
     <img th:src="@{/images/java.png}"/>
-
 
 Fragments : reusable common parts in our pages
 
@@ -83,7 +76,6 @@ Fragments : reusable common parts in our pages
       welcome.html
 
       <div th:replace="/fragments/index :: main-menu"></div>
-
 
 Conditional Logic:
 

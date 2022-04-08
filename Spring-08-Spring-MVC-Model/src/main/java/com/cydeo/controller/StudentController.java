@@ -13,26 +13,26 @@ import java.util.Random;
 public class StudentController {
 
     @RequestMapping("/welcome")
-    public String homePage(Model model){
+    public String homePage(Model model) {
 
-        model.addAttribute("name","Cydeo");
-        model.addAttribute("course","MVC");
+        model.addAttribute("name", "Cydeo");
+        model.addAttribute("course", "MVC");
 
-        String subject="Collections";
-        model.addAttribute("subject",subject);
+        String subject = "Collections";
+        model.addAttribute("subject", subject);
 
-        int studentId=new Random().nextInt();
-        model.addAttribute("id",studentId);
+        int studentId = new Random().nextInt();
+        model.addAttribute("id", studentId);
 
-        List<Integer>numbers=new ArrayList<>();
+        List<Integer> numbers = new ArrayList<>();
         numbers.add(4);
         numbers.add(5);
         numbers.add(7);
         numbers.add(10);
-        model.addAttribute("numbers",numbers);
+        model.addAttribute("numbers", numbers);
 
-        Student student=new Student(1,"Mike","Smith");
-        model.addAttribute("student",student);
+        Student student = new Student(1, "Mike", "Smith");
+        model.addAttribute("student", student);
         return "/student/welcome";
     }
 }

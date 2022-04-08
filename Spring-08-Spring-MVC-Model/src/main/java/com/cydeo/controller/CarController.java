@@ -14,25 +14,25 @@ public class CarController {
 
 
     @RequestMapping("/info") //localhost:8080/car/info?make=Honda&year=2015
-    public String carInfo(@RequestParam String make,@RequestParam Integer year, Model model){
+    public String carInfo(@RequestParam String make, @RequestParam Integer year, Model model) {
 
-        model.addAttribute("make",make);
-        model.addAttribute("year",year);
+        model.addAttribute("make", make);
+        model.addAttribute("year", year);
         return "car/car-info";
     }
 
     @RequestMapping("/info2") //localhost:8080/car/info?make=Honda&year=2015
-    public String carInfo2(@RequestParam(value = "make",required = false,defaultValue = "Tesla") String make, Model model){
+    public String carInfo2(@RequestParam(value = "make", required = false, defaultValue = "Tesla") String make, Model model) {
 
-        model.addAttribute("make",make);
-       // model.addAttribute("year",year);
+        model.addAttribute("make", make);
+        // model.addAttribute("year",year);
         return "car/car-info";
     }
 
     @RequestMapping("/info/{make}/{year}")  //localhost:8080/car/info/honda
-    public String getCarInfo(@PathVariable String make , @PathVariable Integer year, Model model){
-        model.addAttribute("make",make);
-        model.addAttribute("year",year);
+    public String getCarInfo(@PathVariable String make, @PathVariable Integer year, Model model) {
+        model.addAttribute("make", make);
+        model.addAttribute("year", year);
 
         return "car/car-info";
     }

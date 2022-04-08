@@ -8,13 +8,13 @@ import org.springframework.context.annotation.Primary;
 public class FoodConfig {
 
     @Bean
-    HealthyFood healthyFood(){
+    HealthyFood healthyFood() {
         return new HealthyFood();
     }
 
     @Bean(name = "f1")
     @Primary
-    JunkFood junkFood1(){
+    JunkFood junkFood1() {
         return new JunkFood();
     }
 

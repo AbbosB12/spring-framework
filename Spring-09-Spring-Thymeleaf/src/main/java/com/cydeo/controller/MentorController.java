@@ -16,16 +16,17 @@ import java.util.List;
 public class MentorController {
 
     @GetMapping("/register")
-    public String showForm(Model model){
-        model.addAttribute("mentor",new Mentor());
-        List<String>batchList= Arrays.asList("JD1","JD2","EU1","EU2","B15","B18","B20","B23");
-        model.addAttribute("batchList",batchList);
+    public String showForm(Model model) {
+        model.addAttribute("mentor", new Mentor());
+        List<String> batchList = Arrays.asList("JD1", "JD2", "EU1", "EU2", "B15", "B18", "B20", "B23");
+        model.addAttribute("batchList", batchList);
         return "mentor/mentor-register";
     }
-@PostMapping("/confirm")
-    public String showForm2(@ModelAttribute("mentor") Mentor mentor){
 
-      //  return "mentor/mentor-confirmation";
-    return "redirect:/mentor/register";
+    @PostMapping("/confirm")
+    public String showForm2(@ModelAttribute("mentor") Mentor mentor) {
+
+        //  return "mentor/mentor-confirmation";
+        return "redirect:/mentor/register";
     }
 }

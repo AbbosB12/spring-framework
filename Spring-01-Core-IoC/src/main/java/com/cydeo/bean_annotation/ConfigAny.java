@@ -7,12 +7,12 @@ import org.springframework.context.annotation.Configuration;
 public class ConfigAny {
 
     @Bean
-    String str(){
+    String str() {
         return "Developer";
     }
 
     @Bean
-    Integer number(){
+    Integer number() {
         return 100;
     }
 }

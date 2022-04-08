@@ -11,6 +11,7 @@
         <module name="Spring-09-Spring-Thymeleaf" />
         <module name="Spring-06-SpringBoot-Demo" />
         <module name="Spring-07-Spring-MVC-Controller" />
+        <module name="spring-framework" />
         <module name="Spring-00-Coupling" />
         <module name="Spring-02-Core-Wiring" />
         <module name="Spring-04-Abstraction" />
@@ -32,6 +33,7 @@
       <module name="Spring-07-Spring-MVC-Controller" target="11" />
       <module name="Spring-08-Spring-" target="11" />
       <module name="Spring-09-Spring-Thymeleaf" target="11" />
+      <module name="spring-framework" target="11" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">

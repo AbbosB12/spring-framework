@@ -8,7 +8,8 @@
 <!--Displaying value-->
 <h2>Welcome New Student</h2>
 <h2 th:text="${students.get(0).firstName}">
-</h2><h2 th:text="${students.get(0).lastName}"></h2>
+</h2>
+<h2 th:text="${students.get(0).lastName}"></h2>
 
 <!--Concatenation-->
 <h2 th:text="${'Welcome ' + students.get(0).firstName}"></h2>
@@ -37,7 +38,6 @@
     <span th:if="${students.get(0).getState() == 'Arizona'}">Arizona</span>
     <span th:unless="${students.get(0).getState() == 'Arizona'}">Not Arizona</span>
 </div>
-
 
 
 </body>

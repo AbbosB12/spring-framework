@@ -18,6 +18,7 @@
         <module name="Spring-06-SpringBoot-Demo (1) (com.cydeo)" />
         <module name="Spring-09-Spring-Thymeleaf" />
         <module name="Spring-06-SpringBoot-Demo" />
+        <module name="Spring-11-ORM-Mapping-OneToOne" />
         <module name="Spring-10-ORM-TableCreation" />
         <module name="Spring-05-Core-BeanScope" />
       </profile>
@@ -35,6 +36,7 @@
       <module name="Spring-08-Spring-" target="11" />
       <module name="Spring-09-Spring-Thymeleaf" target="11" />
       <module name="Spring-10-ORM-TableCreation" target="11" />
+      <module name="Spring-11-ORM-Mapping-OneToOne" target="11" />
       <module name="spring-framework" target="11" />
     </bytecodeTargetLevel>
   </component>
@@ -46,6 +48,7 @@
       <module name="Spring-08-Spring-" options="-parameters" />
       <module name="Spring-09-Spring-Thymeleaf" options="-parameters" />
       <module name="Spring-10-ORM-TableCreation" options="-parameters" />
+      <module name="Spring-11-ORM-Mapping-OneToOne" options="-parameters" />
     </option>
   </component>
 </project>

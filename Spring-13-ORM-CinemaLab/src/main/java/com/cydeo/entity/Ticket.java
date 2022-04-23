@@ -18,7 +18,7 @@ public class Ticket extends BaseEntity{
     private Integer seatNumber;
     private Integer rowNumber;
 
-    @Column(columnDefinition = "TIMESTAP")
+    @Column(columnDefinition = "TIMESTAMP")
     private LocalDateTime dateTime;
 
     @ManyToOne(fetch = FetchType.LAZY)

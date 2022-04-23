@@ -137,4 +137,3 @@ INSERT INTO ticket (date_time, row_number, seat_number, movie_cinema_id, user_ac
 
 
 
-Displaying 1650575837138-CinemaLabData.txt.

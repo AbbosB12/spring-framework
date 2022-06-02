@@ -21,7 +21,7 @@ public interface CinemaRepository extends JpaRepository<Cinema, Long> {
     List<Cinema> findFirst3BySponsoredNameContainingOrderBySponsoredName(String sponsoredName);
 
     //Write a derived query to list all cinemas in a specific country
-    List<Cinema> listAllByLocationCountry(String country);
+    List<Cinema> findAllByLocationCountry(String country);  //TODO (Fixed) It was saying listAllByLocationCountry as the method name.
 
     //Write a derived query to list all cinemas with a specific name or sponsored name
     List<Cinema> findAllByNameOrSponsoredName(String name, String sponsoredName);
@@ -50,6 +50,6 @@ public interface CinemaRepository extends JpaRepository<Cinema, Long> {
 
     //Write a native query to distinct all cinemas by sponsored name
     @Query(value = "SELECT DISTINCT sponsored_name FROM cinema", nativeQuery = true)
-    List<Cinema> distinctBySponsoredName();
+    List<String> distinctBySponsoredName();  //TODO (Fixed) The return type was List<Cinema> instead of List<String>
 
 }

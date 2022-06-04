@@ -8,11 +8,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Spring-08-Spring-" />
+        <module name="Spring-17-REST-ConsumingApis" />
         <module name="spring-framework" />
         <module name="Spring-07-Spring-MVC-Controller" />
         <module name="Spring-00-Coupling" />
         <module name="Spring-02-Core-Wiring" />
-        <module name="Spring-17-Rest-CosumingApis" />
         <module name="Spring-04-Abstraction" />
         <module name="Spring-01-Core-IoC" />
         <module name="Spring-03-Core-DI" />
@@ -48,6 +48,7 @@
       <module name="Spring-14-ORM-Queries" target="11" />
       <module name="Spring-15-REST" target="11" />
       <module name="Spring-16-REST-Jackson" target="11" />
+      <module name="Spring-17-REST-ConsumingApis" target="11" />
       <module name="Spring-17-Rest-CosumingApis" target="11" />
       <module name="spring-framework" target="11" />
       <module name="Spring12-ORM-Mapping-OneTOMany-ManyToOne" target="11" />
@@ -67,6 +68,7 @@
       <module name="Spring-14-ORM-Queries" options="-parameters" />
       <module name="Spring-15-REST" options="-parameters" />
       <module name="Spring-16-REST-Jackson" options="-parameters" />
+      <module name="Spring-17-REST-ConsumingApis" options="-parameters" />
       <module name="Spring-17-Rest-CosumingApis" options="-parameters" />
       <module name="Spring12-ORM-Mapping-OneTOMany-ManyToOne" options="-parameters" />
     </option>

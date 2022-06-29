@@ -59,7 +59,7 @@
       <module name="Spring-19-REST-Security-Keycloak-LicenseApp" target="11" />
       <module name="Spring-19-REST-Security-Keycloak-OrganizationsApp" target="11" />
       <module name="Spring-20-AOP" target="11" />
-      <module name="Spring-21-UnitTesting-JUnit5" target="13" />
+      <module name="Spring-21-UnitTesting-JUnit5" target="11" />
       <module name="spring-framework" target="11" />
       <module name="Spring12-ORM-Mapping-OneTOMany-ManyToOne" target="11" />
     </bytecodeTargetLevel>

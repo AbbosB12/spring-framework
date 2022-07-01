@@ -39,4 +39,24 @@ class ProjectServiceImplTest {
         assertNotNull(projectDTO1);
     }
 
+    @Test
+    void getByProjectCode_exception_test(){
+        when(projectRepository.findByProjectCode("")).thenThrow(new RuntimeException("Project Not Found"));
+        RuntimeException exception = assertThrows(RuntimeException.class, () -> projectService.getByProjectCode("PR01"));
+        verify(projectRepository).findByProjectCode(anyString());
+        assertEquals("Project Not Found",exception.getMessage());
+    }
+    @Test
+    void save_test(){
+        ProjectDTO projectDTO= new ProjectDTO();
+        Project project=new Project();
+
+        when(projectMapper.convertToEntity(projectDTO)).thenReturn(project);
+        when(projectRepository.save(project)).thenReturn(project);
+
+        projectService.save(projectDTO);
+
+        verify(projectRepository).save(project);
+    }
+
 }

@@ -89,6 +89,7 @@
       <module name="Spring-19-REST-Security-Keycloak-OrganizationsApp" options="-parameters" />
       <module name="Spring-20-AOP" options="-parameters" />
       <module name="Spring-22-UnitTesting-Mockito" options="-parameters" />
+      <module name="Spring-23-UnitTesting-MockMvc" options="-parameters" />
       <module name="Spring12-ORM-Mapping-OneTOMany-ManyToOne" options="-parameters" />
     </option>
   </component>

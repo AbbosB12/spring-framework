@@ -5,6 +5,7 @@ import com.cydeo.dto.TaskDTO;
 import com.cydeo.entity.Task;
 import com.cydeo.entity.User;
 import com.cydeo.enums.Status;
+import com.cydeo.mapper.MapperUtil;
 import com.cydeo.mapper.ProjectMapper;
 import com.cydeo.mapper.TaskMapper;
 import com.cydeo.repository.TaskRepository;
@@ -24,12 +25,14 @@ public class TaskServiceImpl implements TaskService {
     private final TaskMapper taskMapper;
     private final ProjectMapper projectMapper;
     private final UserRepository userRepository;
+    private final MapperUtil mapperUtil;
 
-    public TaskServiceImpl(TaskRepository taskRepository, TaskMapper taskMapper, ProjectMapper projectMapper, UserRepository userRepository) {
+    public TaskServiceImpl(TaskRepository taskRepository, TaskMapper taskMapper, ProjectMapper projectMapper, UserRepository userRepository, MapperUtil mapperUtil) {
         this.taskRepository = taskRepository;
         this.taskMapper = taskMapper;
         this.projectMapper = projectMapper;
         this.userRepository = userRepository;
+        this.mapperUtil = mapperUtil;
     }
 
     @Override
@@ -44,7 +47,8 @@ public class TaskServiceImpl implements TaskService {
 
     @Override
     public List<TaskDTO> listAllTasks() {
-        return taskRepository.findAll().stream().map(taskMapper::convertToDTO).collect(Collectors.toList());
+//        return taskRepository.findAll().stream().map(taskMapper::convertToDTO).collect(Collectors.toList());
+        return taskRepository.findAll().stream().map(task -> mapperUtil.convert(task, new TaskDTO())).collect(Collectors.toList());
     }
 
     @Override

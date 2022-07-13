@@ -21,6 +21,7 @@
         <module name="Spring-20-AOP" />
         <module name="Spring-05-Core-BeanScope" />
         <module name="Spring-08-Spring-" />
+        <module name="Spring-24-docker" />
         <module name="Spring-17-REST-ConsumingApis" />
         <module name="spring-framework" />
         <module name="Spring-00-Coupling" />
@@ -64,6 +65,7 @@
       <module name="Spring-21-UnitTesting-JUnit5" target="11" />
       <module name="Spring-22-UnitTesting-Mockito" target="11" />
       <module name="Spring-23-UnitTesting-MockMvc" target="11" />
+      <module name="Spring-24-docker" target="17" />
       <module name="spring-framework" target="11" />
       <module name="Spring12-ORM-Mapping-OneTOMany-ManyToOne" target="11" />
     </bytecodeTargetLevel>
@@ -90,6 +92,7 @@
       <module name="Spring-20-AOP" options="-parameters" />
       <module name="Spring-22-UnitTesting-Mockito" options="-parameters" />
       <module name="Spring-23-UnitTesting-MockMvc" options="-parameters" />
+      <module name="Spring-24-docker" options="-parameters" />
       <module name="Spring12-ORM-Mapping-OneTOMany-ManyToOne" options="-parameters" />
     </option>
   </component>

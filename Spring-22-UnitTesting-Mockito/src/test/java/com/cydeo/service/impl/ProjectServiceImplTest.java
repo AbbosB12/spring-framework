@@ -15,41 +15,55 @@ import static org.mockito.Mockito.*;
 
 @ExtendWith(MockitoExtension.class)
 class ProjectServiceImplTest {
+
     @Mock
     ProjectRepository projectRepository;
+
     @Mock
     ProjectMapper projectMapper;
+
     @InjectMocks
     ProjectServiceImpl projectService;
 
     @Test
-    void getByProjectCode_test(){
-        //Given
-        Project project=new Project();
-        ProjectDTO projectDTO=new ProjectDTO();
+    void getByProjectCode_test() {
+
+        // Given
+        Project project = new Project();
+        ProjectDTO projectDTO = new ProjectDTO();
+
         when(projectRepository.findByProjectCode(anyString())).thenReturn(project);
         when(projectMapper.convertToDto(project)).thenReturn(projectDTO);
-        //When
+
+        // When
         ProjectDTO projectDTO1 = projectService.getByProjectCode(anyString());
 
-        //Then
-        //Verify
+        // Then
         verify(projectRepository).findByProjectCode(anyString());
         verify(projectMapper).convertToDto(any(Project.class));
+
         assertNotNull(projectDTO1);
+
     }
 
     @Test
-    void getByProjectCode_exception_test(){
+    void getByProjectCode_exception_test() {
+
         when(projectRepository.findByProjectCode("")).thenThrow(new RuntimeException("Project Not Found"));
-        RuntimeException exception = assertThrows(RuntimeException.class, () -> projectService.getByProjectCode("PR01"));
-        verify(projectRepository).findByProjectCode(anyString());
-        assertEquals("Project Not Found",exception.getMessage());
+
+        Throwable exception = assertThrows(RuntimeException.class, () -> projectService.getByProjectCode("PR01"));
+
+//        verify(projectRepository).findByProjectCode(anyString());
+
+        assertEquals("Project Not Found", exception.getMessage());
+
     }
+
     @Test
-    void save_test(){
-        ProjectDTO projectDTO= new ProjectDTO();
-        Project project=new Project();
+    void save_test() {
+
+        ProjectDTO projectDTO = new ProjectDTO();
+        Project project = new Project();
 
         when(projectMapper.convertToEntity(projectDTO)).thenReturn(project);
         when(projectRepository.save(project)).thenReturn(project);
@@ -58,6 +72,7 @@ class ProjectServiceImplTest {
 
         verify(projectRepository).save(project);
         verify(projectMapper).convertToEntity(any(ProjectDTO.class));
+
     }
 
 }
